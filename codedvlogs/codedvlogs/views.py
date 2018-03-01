@@ -1,10 +1,9 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
-#   create a function
+#   create functions
 
 def about(request):
-    return HttpResponse("Hello This is CodedVlog First Test")
+    return render(request,'about.html')
 
 def homepage(request):
-    return HttpResponse("Hello Welcome To CodedVlogs")
+    return render(request,'home.html')
